@@ -4,7 +4,7 @@ library(tidyverse)
 view(movies)
 
 #5-2
-filter(movies,year==2005, comedy==1)
+filter(movies, year == 2005, Comedy == 1)
 
 #5-3
 select(movies,title,year,budget) %>%
@@ -17,3 +17,8 @@ filter(movies, Animation==1,year>=1990 & year<2000) %>%
 #5-5
 dramas <- filter(movies, drama==1)
 arrange(dramas, desc(length))
+
+#5-6
+
+group_by(movies, mpaa) %>%
+  summarise (mean(rating), mad(rating))
