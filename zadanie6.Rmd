@@ -1,0 +1,45 @@
+---
+title: "Duży szwajcarski pies pasterski"
+author: "Ada Parzych"
+date: "8 maja 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#### **Duży szwajcarski pies pasterski** jedna z ras psów należąca do grupy psów w typie pinczera i sznaucera, molosowatych, psów szwajcarskich pasterskich i ras innych. Zaklasyfikowana do sekcji szwajcarskich psów pasterskich. 
+
+##### **Szata i umaszczenie**
+
+* Szata trójbarwna, tzw.tricolor - z przewagą czarnego na grzbiecie (płaszcz).  
+* Kończyny są podpalane, a pierś oraz kufa białe.
+* Włos twardy i gęsty, zwarty i nie "sypiący się"
+
+![](http://caveat-actor.pl/pliki/koka-zima.jpg)
+
+### Więcej o tych pieskach można przeczytać [tu](http://www.szwajcary.com/)
+
+| Zachowanie i charakter | Użytkowość | Zdrowie i pielęgnacja |  Popularność |
+|------------------------|------------|-----------------------|--------------|
+| Są to przyjacielskie psy o łagodnym charakterze. Zawsze skory do zabawy, ale i zrównoważony. Wobec dzieci jest delikatny i nie jest bojaźliwy. | Obecnie psy te zyskują na popularności będąc hodowane jako psy rodzinne. Cierpliwy pies towarzyszący, nadający się również na psa ratowniczego. Wykorzystywany jako stróż i pies pasterski. | Duży szwajcarski pies pasterski wymaga odpowiedniego pokarmu, bogatego w minerały. Dzięki temu może uniknąć wielu typowych schorzeń, właściwych dużym rasom. Ze względu na predyspozycje do skrętu kiszek powinien jadać regularnie. Może cierpieć podobnie jak inne duże psy na dysplazję stawów biodrowego oraz łokciowego. | Duży Szwajcarski Pies Pasterski nie jest zbyt popularny w Polsce. Na dużych wystawach psów rasowych pojawia się maksimum kilkanaście osobników. W ostatnich latach wzrosła liczba hodowli psów tej rasy. |
+
+#### Code chunki
+
+``` {r echo = FALSE} 
+library(tidyverse)
+ggplot(data = mpg) +
+geom_point (mapping = aes(x = displ, y = cty)) +
+  labs(title = "Pojemnosc silnika a spalanie", x = "pojemnosc", y = "spalanie") +
+  theme_classic()
+```
+
+
+```{r echo = TRUE}
+dzis <- as.Date("2018-03-20")
+koniec <- as.Date("2018-06-30")
+poslizg <- 0
+dni = koniec - dzis + poslizg * 365
+print(dni*24)
+```
